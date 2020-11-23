@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from './Link';
 
 const Header = (navId) => {
   console.log(navId);
@@ -14,17 +14,17 @@ const Header = (navId) => {
      <div className="collapse navbar-collapse" id="navbarSupportedContent">
        <ul className="navbar-nav mr-auto">
          <li className="nav-item active">
-         <Link to="/" className="nav-link">
+         <Link href="/" className="nav-link">
           Home
           </Link>
          </li>
          <li className="nav-item active">
-         <Link to="/resume" className="nav-link">
+         <Link href="/resume" className="nav-link">
           About Me
           </Link>
          </li>
          <li className="nav-item active">
-         <Link to="/videos" className="nav-link">
+         <Link href="/videos" className="nav-link">
           You Tube API
           </Link>
          </li>
