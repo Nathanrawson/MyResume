@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './resumeCss.css';
 import Link from '../Link';
 import Header from '../Header';
@@ -6,7 +6,7 @@ import Header from '../Header';
 
 const Resume = () => {
 
-    const [screenSize, setCurrentScreenSize] = useState(window.screen.width)
+    const [screenSize] = useState(window.screen.width)
     console.log(screenSize)
     if(screenSize > 500){
     return (
