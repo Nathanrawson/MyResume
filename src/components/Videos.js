@@ -19,9 +19,10 @@ const Videos = () => {
    // setSelectedVideo(response.data.items[0])
 
  return (
-  
+    <div>
+   <Header navColor="dark"/>
  <div className="ui container">
-     <Header/>
+    
             <SearchBar onFormSubmit={search}/>
             <div className="ui grid">
                 <div className="ui row">
@@ -33,6 +34,7 @@ const Videos = () => {
             </div>
          </div>
     </div>
+ </div>
  </div>
  );
 
