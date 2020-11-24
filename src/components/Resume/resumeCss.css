@@ -13,6 +13,43 @@
   background-color: black;
 }
 
+#mobilePage{
+  height: 100%;
+  width: 100%;
+  background-position-x:-140px;
+  background-image: url("https://lh3.googleusercontent.com/oNJVzLfn-w98AkkltXNrU-bqUPBsmXvzHVnQONBuOd7e6KfzoGW-lsQezB9f2PBkZ2JhNHx523j_7eZ52ZnmgQoq7Cme5hYPsJGUke1hbmmAnvGCakHP4EPLklRdqi4ZOal62eHV2K_lToTe5YfCz8VUVjUgLlatIEteYGXInXYO3y0lgNyo6wpONsKlwOLRALAxKcbbcboegW4aPg1_FbKxm-feVAAMMdKM1FEJP-rxGKAv3EI4uPwoVjEo-yf5JV1Es8gjDzyEG5w6Aqxv_KHO2jFc9aHhIrY_PJRV6207PyJDDT8tgrLfjN-kHGzp79x-1jYf-w0J8E_uXy1WQCzec6wxwf_njW8H2QAaYk6XVkyYlVDIUYQGDNX1PkARQ_ZIngqcYyT4S_ZISzbS8FhpkiPUS8r7ytJR5NwIITlV7W4qZ7HZv6JVFTIJvwV1UmexTasHSOuvXLAW-qWtRHmH0EXm2fG8rfZRxGBIjkBh64pt9RzUQES9_m1PqP57IO8raCG0uy92jcPf1G4aCEqbh3vZ2HSsYIZyf6W0u9rYE4O8ZI0iVMpprf6i7-wM9n9RtgfUPKFqsgxm-GuX1MQls8vTfG_lXGrEf9k0HwI4--9gQNypxuqvGNJySWItXK73ZK3MxeYTTWkxoD-Zz7KGLFHUmFpJUx75sQSbNC3INAxwRqEcoKakDl56hQ=w611-h912-no?authuser=1");
+}
+
+#resumeButtonDiv{
+  text-align: center;
+}
+
+#mobileResumeBoxDiv{
+  top: 35%;
+  height: 10em;
+    position: relative;
+}
+
+#mobileResumeBox{
+  margin: 0;
+  position: absolute;
+  
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+}
+
+#LinkedInDivMobile{
+  text-align: center;
+  padding-right: 10px;;
+}
+
+#resumeMobileTitle{
+  color:white;
+  text-align: center;
+}
+
 #Dark{
     top: 0;
     z-index: 999;
@@ -26,7 +63,7 @@
 }
 
 #linkedInIcon{
-    background: radial-gradient(#fdfeff 63%,transparent 63%);
+    background: radial-gradient(#fdfeff 61%,transparent 60%);
     color: #0077b5;
     top:10px;
 }
