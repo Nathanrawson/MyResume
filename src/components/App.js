@@ -16,9 +16,6 @@ const App = () => {
 <Videos/>
 </Route>
 	 <Route path="/">
-<Resume/>
-</Route>
-	 <Route path="/resume">
 <ResumeContent/>
 </Route>
  </div>

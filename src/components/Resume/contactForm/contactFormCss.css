@@ -1,0 +1,80 @@
+.contact-details{
+    width:50%;
+    display: inline-block;
+    height: 1000px;
+    background-color:black;
+    margin-bottom:400px;
+    background-image: url(https://res.cloudinary.com/dng8alzfo/image/upload/v1606207352/Resume/Nathan.jpg);
+    background-size: cover;
+}
+
+.contact-form{
+    width:50%;
+    display: inline-block;
+    height: 1000px;
+    color:black;
+    background-color:white;
+    margin-bottom:400px;
+    vertical-align: top;
+    
+
+}
+
+.contact-details-text{
+    color:white;
+}
+
+.contact-details-section{
+    text-align: center;
+    padding-top: 200px;
+}
+
+.contact-overlay {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    background: rgba(7, 7, 7, 0.5);
+    color:white;
+ 
+  }
+
+.contact-form  h2{
+color:black;
+}
+
+.centre.contact-title{
+    margin-top:50px;
+}
+
+.contact-box{
+    margin:20px;
+    border: 1px solid #ced4da;
+}
+
+.contact-input::placeholder{
+    margin:30px;
+}
+
+.contact-input{
+    padding:30px;
+}
+
+.contact-box-title{
+    margin:20px !important;
+}
+
+.contact-button{
+    padding:15px;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.contact-textarea{
+    height:140px !important;
+}

@@ -53,11 +53,8 @@
   text-align: center;
 }
 
-#Dark{
-    top: 0;
-    z-index: 999;
-    position: fixed;
-    width: 100%;
+.nav-mobile{
+display:none;
 }
 
 #Resume{
@@ -66,7 +63,7 @@
 }
 
 #linkedInIcon{
-    background: radial-gradient(#fdfeff 61%,transparent 60%);
+    background: radial-gradient(#fdfeff 59.9%,transparent 0%);
     color: #0077b5;
     top:10px;
 }
@@ -76,6 +73,14 @@
 }
 
 
+.hoverItem:hover{
+  color:grey;
+  cursor: pointer;
+}
+
+.nav-btn:hover{
+  color:rgb(19, 185, 231);
+}
 
 #profilePic{
     display: inline-block;
@@ -87,14 +92,20 @@
     height: 200px;
     width: 200px;
     border-radius:50%;
+    border-style: solid;
+    cursor:pointer;
 }
 
+h1 {font-family: 'Montserrat', sans-serif;color: white}
+div {font-family: 'Montserrat', sans-serif;color: white}
+h3 {font-family: 'Montserrat', sans-serif; color: black;}
+h2 {font-family: 'Montserrat', sans-serif;color: white}
 
 #landing-header{
     z-index: 1;
     position: relative;
     text-align: center;
-    padding-top: 40vh;
+    padding-top: 20vh;
 }
 
 #landing-header h1 {
@@ -111,7 +122,6 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -120,14 +130,13 @@
 .slideshow li { 
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  background-size: cover;
+  background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   opacity: 0;
-  z-index: 0;
   animation: imageAnimation 50s linear infinite; 
 }
 
@@ -179,11 +188,146 @@
 }
 
 #ResumeContent{
-    background-color:#343a40;
+   
     height:1200px;
 }
 
 #resumeBody{
     background-color: rgb(202, 202, 202);
     height: 1000px;
+}
+
+#ResumeSection{
+  background-color: blue;
+  height: 100vh;
+}
+
+
+#resumeNavbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#resumeNavbar a:hover {
+  background-color: #ddd;
+  color: rgb(185, 179, 179);
+  cursor: pointer;
+}
+
+#resumeNavbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.nonSticky{
+  position:absolute;
+  bottom:-342px !important;
+
+}
+
+#GoToProfileButton{
+  position: absolute;
+  bottom: 0px;
+  left:44px;
+  width: 148px;
+  color:white;
+  text-align: center;
+  padding:20px;
+  cursor: pointer;
+  background-color: black;
+}
+
+#rocket{
+  margin-left:90%;
+  color:black;
+  position: fixed;
+  bottom:100px;
+  -ms-transform: rotate(137deg); /* IE 9 */
+  transform: rotate(137deg);
+}
+
+@media only screen and (max-width: 600px) {
+  #GoToProfileButton{ 
+    width:100%;
+    height: 50px;
+    left:0px;
+  }
+  #landing-header{
+    padding-top: 20vh;
+  }
+}
+
+#Profile{
+  height:800px;
+}
+
+#Experiences{
+  height:2000px;
+}
+
+#Abilities{
+  height:1200px;
+}
+
+#Projects{
+  height:3200px;
+}
+
+.centre{
+  text-align: center;
+}
+
+#resumeNavbar{
+  width: 100px;
+  color:white;
+  background-color: transparent !important;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  margin-top:50px;
+  top:0px;
+  position: fixed;
+  bottom:500px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#resumeNavbar > div{
+  text-align: center;
+  font-weight: bold;
+  width:140px;
+  padding:30px
+}
+
+@keyframes updown {
+ 
+  50% {
+    transform: translateY(40%);
+  }
+
+  
+}
+
+#resumeNavbar a{
+  display:block;
+  width:100%;
+}
+
+
+
+.navbar-nav{
+  flex-direction:column !important;
+  background-color:black;
 }

@@ -1,0 +1,17 @@
+#profileImage{
+    vertical-align:top;
+    display: inline-block;
+    width: 40%;
+    height:500px;
+    background-size: cover;
+    box-shadow: 0 8px 6px -6px black;
+    background-image:url(https://res.cloudinary.com/dng8alzfo/image/upload/v1607980081/Resume/NathanRawson1234.jpg);
+}
+
+#AboutMeDiv{
+    display: inline-block;
+    width: 40%;
+    height:500px;
+    vertical-align:top;
+    margin-left:50px;
+}

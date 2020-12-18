@@ -1,0 +1,44 @@
+.ability{
+    display:inline-block;
+    margin-right:30%;
+    min-width: 150px;
+    vertical-align: top;
+}
+
+.ability > p{
+    color: black;
+}
+
+.fa-star{
+    margin:1px;
+    transition: width 1s;
+    width: 15px;
+    height: 2px;
+}
+
+.rating{
+    width: 150px;
+    vertical-align: top;
+    display:inline-block;
+}
+
+.ability-div:hover .rating > i{
+    width:20px;
+}
+
+.ability-div{
+    margin-top:10px;
+}
+
+.ability-div:hover{
+
+    background-color: rgba(51, 170, 51, .1);
+  
+}
+
+
+.ability-box{
+    width:50%;
+    vertical-align: top;
+    display:inline-block;
+}

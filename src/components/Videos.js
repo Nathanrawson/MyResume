@@ -3,7 +3,7 @@ import SearchBar from './SearchBar'
 import VideoList from './VideoList'
 import VideoDetail from './VideoDetail'
 import useVideos from '../hooks/useVideos'
-import Header from './Header';
+import Navbar from './Navbar';
 
 const Videos = () => {
  
@@ -20,7 +20,7 @@ const Videos = () => {
 
  return (
     <div>
-   <Header navColor="dark"/>
+   <Navbar/>
  <div className="ui container">
     
             <SearchBar onFormSubmit={search}/>

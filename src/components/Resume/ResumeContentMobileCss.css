@@ -1,0 +1,100 @@
+@media only screen and (max-width: 992px) {
+    .nav-mobile{
+        display:block;
+    }
+    #resumeNavbar {
+        left:unset;
+        width: 100%;
+    }
+
+   
+    #GoToProfileButton{
+        width:100%;
+        left:0px;
+    }
+
+    .navbar-nav{
+        display:block;
+    }
+
+    .bg-dark{
+        background-color: black !important;
+    }
+
+    #Dark{
+        margin-top:0;
+    }
+
+    .nonSticky {
+        position: inherit;
+    }
+
+    .sticky{
+       top: 0px;
+    }
+
+    #resumeNavbar{
+        color:white;
+        background-color: black !important;
+      }
+
+      #resumeNavbar > div{
+          width:100%;
+      }
+
+      #Profile{
+          height: 1400px;
+      }
+      #profileImage{
+          width: 100%;
+      }
+      #AboutMeDiv{
+          width:100%;
+          margin-left:0px;
+          margin-top:30px;
+      }
+
+      .experience-div{
+          margin-left:0px;
+          margin-right:0px;
+      }
+      .education-section{
+          width:100%;
+          text-align: center;
+      }
+
+      .education-name{
+          width:100%;
+      }
+
+      .education-qualififcation{
+          width:100%;
+          text-align: center;
+          margin-left:0px;
+      }
+      .mobile-title{
+          width: 100%;
+          text-align: center;
+      }
+
+      #Experiences{
+          height:2800px;
+      }
+
+      #Abilities{
+          height:1700px;
+      }
+
+      #Projects{
+          height:4200px;
+      }
+
+      .contact-details{
+          width:100%;
+          margin-bottom:0px;
+      }
+      .contact-form{
+          width:100%;
+          margin-bottom:50px;
+      }
+    }
