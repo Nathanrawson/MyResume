@@ -203,7 +203,7 @@ h2 {font-family: 'Montserrat', sans-serif;color: white}
 }
 
 
-#resumeNavbar a {
+#resumeNavbar span {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -213,13 +213,13 @@ h2 {font-family: 'Montserrat', sans-serif;color: white}
   font-size: 17px;
 }
 
-#resumeNavbar a:hover {
+#resumeNavbar span:hover {
   background-color: #ddd;
   color: rgb(185, 179, 179);
   cursor: pointer;
 }
 
-#resumeNavbar a.active {
+#resumeNavbar span.active {
   background-color: #4CAF50;
   color: white;
 }
@@ -320,7 +320,7 @@ h2 {font-family: 'Montserrat', sans-serif;color: white}
   
 }
 
-#resumeNavbar a{
+#resumeNavbar span{
   display:block;
   width:100%;
 }

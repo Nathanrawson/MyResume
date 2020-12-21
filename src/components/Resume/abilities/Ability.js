@@ -6,9 +6,9 @@ const Ability = (props) => {
 
     const abilityRating = [...Array(5)].map((elementInArray, index) => {
         if(index < props.stars){
-        return <i key={index} class="fa fa-star"  aria-hidden="true"></i>;
+        return <i key={index} className="fa fa-star"  aria-hidden="true"></i>;
         }else{
-            return <i key={index} style={{color:'grey'}} class="fa fa-star" aria-hidden="true"></i>;
+            return <i key={index} style={{color:'grey'}} className="fa fa-star" aria-hidden="true"></i>;
         }
     }) 
     return (

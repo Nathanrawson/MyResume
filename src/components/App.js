@@ -1,7 +1,6 @@
 import React from 'react';
 import Videos from './Videos'
 import Route from './Route'
-import Resume from './Resume/Resume';
 import ResumeContent from './Resume/ResumeContent'
 import './app.css';
 

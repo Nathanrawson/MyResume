@@ -1,9 +1,7 @@
-import React, { useState, useEffect} from 'react';
-import Link from '../Link'
+import React, { useState} from 'react';
 import Profile from './profile/Profile'
 import './resumeCss.css'
 import Section from './ResumeSection';
-import Navbar from '../Navbar'
 import Header from '../Header';
 import Experiences from './experiences/Experiences'
 import Projects from './projects/Projects'
@@ -12,7 +10,6 @@ import ContactForm from './contactForm/ContactForm'
 import './ResumeContentMobileCss.css'
 
 const ResumeContent = () => {
-    const [screenSize] = useState(window.screen.width);
     const [navClass, setNavClass] = useState("");
     
 
@@ -27,7 +24,7 @@ function myFunction() {
    //Add forloop array here
    var sections = ['Profile','Experiences', 'Abilities','Projects', 'Contact']
    for(var i = 0; i < sections.length; i++){
-       if(i == 4 && window.pageYOffset > document.getElementById(sections[i]).offsetTop - 200){
+       if(i === 4 && window.pageYOffset > document.getElementById(sections[i]).offsetTop - 200){
         document.getElementById(sections[i]+'Button').style.backgroundColor = '#aac5e2'
        }
     else if(window.pageYOffset > document.getElementById(sections[i]).offsetTop -200 && window.pageYOffset <  document.getElementById(sections[i+1]).offsetTop - 200){
@@ -57,7 +54,7 @@ function myFunction() {
       <h3 style={{color:"white"}}>Software Developer</h3>
       <div><div id="resumeButtonDiv"><a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213206&authkey=AInFSTroIMsKQvE&em=2">Resume (PDF)</a>
        <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213057&authkey=AEYsc4lfjDvH_jQ&em=2">Resume (Word)</a></div>
-       <div id="LinkedInDivMobile"> <a href="https://www.linkedin.com/in/nathan-rawson-b81726114"><i id="linkedInIcon" className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a></div>
+    <div id="LinkedInDivMobile"> <a href="https://www.linkedin.com/in/nathan-rawson-b81726114"><i id="linkedInIcon" className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i>{""}</a></div>
        </div>
      
    </div>
@@ -65,7 +62,7 @@ function myFunction() {
    </div>
          
             {nav()}
-            <i id="rocket" class="fa fa-rocket fa-4x"></i>
+            <i id="rocket" className="fa fa-rocket fa-4x"></i>
             <div>
             <Section color="#B9B9B9" id="Profile">
                <Profile/>

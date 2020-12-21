@@ -5,7 +5,7 @@ import ExperiencesSection from './ExperiencesSection';
 
 
 const Experiences = () => {
-    return (<div class=""><SectionHeader h1="Experiences" h3='“Don’t let yesterday take up too much of today.” – Will Rogers"'/>
+    return (<div className=""><SectionHeader h1="Experiences" h3='“Don’t let yesterday take up too much of today.” – Will Rogers"'/>
     <div className="experience-div">
     <h2 className="mobile-title">Education</h2>
    <ExperiencesSection qualififcation="MSC Advanced Computer Science" place="University Of Hertfordshire" date="Sep 2019-Sep 2020" content="The course far broadened my understanding in key computer science concepts in areas such as Data Science, Computational Algorithms and Paradigms, Neural Networks and Machine Learning and Legal and ethical issues associated with software development."/>

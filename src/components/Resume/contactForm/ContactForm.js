@@ -9,7 +9,7 @@ function sendEmail(){
         window.$('.toast').toast('show');
         return;
     }
- document.querySelector('.contact-button').outerHTML = `<div class="spinner-border text-primary"></div>`
+ document.querySelector('.contact-button').outerHTML = `<div className="spinner-border text-primary"></div>`
     var emailDetails = {
  firstName:  document.getElementById('firstName').value,
  surName:  document.getElementById('surName').value,
@@ -26,7 +26,7 @@ const sendEmail = async emailDetails => {
     });
 
     if(response.data === "Accepted"){
-    document.querySelector(".contact-form").outerHTML = `<div class="contact-form"><div><h2 style="margin-top: 90%; text-align: center;">Thank you for your message!</h2></div></div>`
+    document.querySelector(".contact-form").outerHTML = `<div className="contact-form"><div><h2 style="margin-top: 90%; text-align: center;">Thank you for your message!</h2></div></div>`
     }else{
         alert(response.data)
     }
@@ -38,17 +38,17 @@ sendEmail(emailDetails);
 
 const ContactForm = () => {
     return (
-    <div> <SectionHeader h1="Contact Me!" h3="Call Me!"/><div className="contact-details"><div class="contact-overlay">
+    <div> <SectionHeader h1="Contact Me!" h3="Call Me!"/><div className="contact-details"><div className="contact-overlay">
         <div className="contact-details-section">
-            <h3 className="contact-details-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h3>
+            <h3 className="contact-details-text"><i className="fa fa-map-marker" aria-hidden="true"></i> Address</h3>
             <p>Flat 2, 61A Howardsgate, Welwyn Garden City, Al86BB</p>
         </div>
         <div className="contact-details-section">
-            <h3 className="contact-details-text"><i class="fa fa-phone" aria-hidden="true"></i> Lets Talk</h3>
+            <h3 className="contact-details-text"><i className="fa fa-phone" aria-hidden="true"></i> Lets Talk</h3>
             <p>Call me on 07720857279</p>
         </div>
         <div className="contact-details-section">
-            <h3 className="contact-details-text"><i class="fa fa-envelope-o" aria-hidden="true"></i> Get Me By Email</h3>
+            <h3 className="contact-details-text"><i className="fa fa-envelope-o" aria-hidden="true"></i> Get Me By Email</h3>
             <p>nathan@nathanrawson.com</p>
         </div>
        </div><div></div></div>
