@@ -18,22 +18,14 @@ function sendEmail() {
         phoneNumber: document.getElementById('phoneNumber').value,
     };
 
-
-
     const sendEmail = async emailDetails => {
-        const response = await SendGridEmail.get('', {
+        await SendGridEmail.get('', {
             params: emailDetails,
         });
-
-        if (response.data === "Accepted") {
-            document.querySelector(".contact-form").outerHTML = `<div className="contact-form"><div><h2 style="margin-top: 90%; text-align: center;">Thank you for your message!</h2></div></div>`
-        } else {
-            alert(response.data)
-        }
+        document.querySelector(".contact-form").outerHTML = `<div class="contact-form"><div><h2 style="margin-top: 90%; text-align: center;">Thank you for your message!</h2></div></div>`
     }
 
     sendEmail(emailDetails);
-
 }
 
 const ContactForm = () => {
