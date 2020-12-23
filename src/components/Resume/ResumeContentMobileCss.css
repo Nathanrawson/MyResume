@@ -1,4 +1,10 @@
 @media only screen and (max-width: 992px) {
+
+    #rocket{
+        margin-left:0;
+        display: none !important;
+    }
+
     .nav-mobile{
         display:block;
     }
@@ -30,6 +36,8 @@
 
     #Dark{
         margin-top:0;
+        position: fixed;
+        z-index: 99;
     }
 
     .nonSticky {
@@ -48,6 +56,8 @@
       #resumeNavbar > div{
           width:100%;
       }
+
+     
 
       #Profile{
           height: 1400px;
