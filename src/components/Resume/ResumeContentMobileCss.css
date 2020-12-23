@@ -7,10 +7,17 @@
         width: 100%;
     }
 
-   
+   .ability-box{
+    text-align: center;
+   }
+    
     #GoToProfileButton{
         width:100%;
         left:0px;
+    }
+
+    #Abilities h2{
+        text-align: center;
     }
 
     .navbar-nav{
@@ -78,7 +85,7 @@
       }
 
       #Experiences{
-          height:2800px;
+          height:2000px;
       }
 
       #Abilities{
@@ -97,4 +104,28 @@
           width:100%;
           margin-bottom:50px;
       }
+    }
+
+    @media only screen and (max-width: 700px) {
+        #Experiences{
+            height:2300px;
+        } 
+    }
+
+    @media only screen and (max-width: 413px) {
+        #Experiences{
+            height:2450px;
+        }
+        #Profile{
+            height:1500px;
+        }
+    }
+
+    @media only screen and (max-width: 330px) {
+        #Experiences{
+            height:2800px;
+        }
+        #Profile{
+            height:1500px;
+        }  
     }

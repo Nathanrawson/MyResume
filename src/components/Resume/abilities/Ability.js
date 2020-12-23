@@ -5,18 +5,18 @@ import './AbilitiesCss.css';
 const Ability = (props) => {
 
     const abilityRating = [...Array(5)].map((elementInArray, index) => {
-        if(index < props.stars){
-        return <i key={index} className="fa fa-star"  aria-hidden="true"></i>;
-        }else{
-            return <i key={index} style={{color:'grey'}} className="fa fa-star" aria-hidden="true"></i>;
+        if (index < props.stars) {
+            return <i key={index} className="fa fa-star" aria-hidden="true"></i>;
+        } else {
+            return <i key={index} style={{ color: 'grey' }} className="fa fa-star" aria-hidden="true"></i>;
         }
-    }) 
+    })
     return (
-   
-           <div id={props.ability.replace(/[^A-Z0-9]/ig, "_")} className="ability-div">
-  <div className="ability"><p>{props.ability}</p></div><div className="rating">{abilityRating}</div>
-    </div>
-    
+
+        <div id={props.ability.replace(/[^A-Z0-9]/ig, "_")} className="ability-div">
+            <div className="ability"><p>{props.ability}</p></div><div className="rating">{abilityRating}</div>
+        </div>
+
     );
 }
 
