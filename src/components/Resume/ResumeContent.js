@@ -11,9 +11,6 @@ import './ResumeContentMobileCss.css'
 
 const ResumeContent = () => {
     const [navClass, setNavClass] = useState("");
-
-
-
     const nav = () => {
         return <Header navClass={navClass} navColor="dark" navId="Dark" />;
     }
@@ -39,23 +36,26 @@ const ResumeContent = () => {
         } else {
             setNavClass("nonSticky")
         }
-
     }
     return (
         <div style={{ height: "100%" }} id="ResumeContent" >
-            <div style={{ height: "100%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundImage: "url(https://res.cloudinary.com/dng8alzfo/image/upload/v1606858945/Resume/john-fowler-d2YMQ-hZ3og-unsplash_1.jpg)" }}>
+
+            <div style={{ height: "100%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundColor: "#00c2cd" }}>
                 <div id="landing-header">
-                    <div onClick={() => document.getElementById('Profile').scrollIntoView({ behavior: 'smooth' })} ><div id="profilePic"></div></div>
-                    <h1 className="hoverItem" onClick={() => document.getElementById('Profile').scrollIntoView({ behavior: 'smooth' })} style={{ color: "white", textDecoration: "underline", textUnderlineOffset: "3px" }}>Nathan Rawson</h1>
-                    <h3 style={{ color: "white" }}>Software Developer</h3>
-                    <div>
+                    <div onClick={() => document.getElementById('Profile').scrollIntoView({ behavior: 'smooth' })} >
+                        <video className='videoTag' autoPlay muted loop >
+                            <source height src="https://res.cloudinary.com/dng8alzfo/video/upload/v1609079549/Copy_of_Copy_of_Nathan_Rawson.mp4" type='video/mp4' />
+                        </video>
+                    </div>
+
+                    <div id="resumeButtons">
                         <div id="resumeButtonDiv">
                             <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213206&authkey=AInFSTroIMsKQvE&em=2">Resume (PDF)</a>
                             <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213057&authkey=AEYsc4lfjDvH_jQ&em=2">Resume (Word)</a>
                         </div>
                         <div id="LinkedInDivMobile">
                             <a href="https://www.linkedin.com/in/nathan-rawson-b81726114">
-                                <i id="linkedInIcon" className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i>
+                                <i id="linkedInIcon" className="fa fa-linkedin-square fa-4x" aria-hidden="true" ></i>
                                 {""}</a>
                         </div>
                     </div>
@@ -66,19 +66,18 @@ const ResumeContent = () => {
             </div>
 
             {nav()}
-            <i id="rocket" className="fa fa-rocket fa-4x"></i>
             <div>
                 <Section color="#B9B9B9" id="Profile">
                     <Profile />
                 </Section>
-                <Section color="#00AAA9" id="Experiences">
+                <Section color="#00c2cd" id="Experiences">
                     <Experiences />
                 </Section>
                 <Section color="#B9B9B9" id="Abilities">
                     <Abilities />
                 </Section>
 
-                <Section color="#00AAA9" id="Projects">
+                <Section color="#00c2cd" id="Projects">
                     <Projects />
                 </Section>
                 <Section color="#B9B9B9" id="Contact">
