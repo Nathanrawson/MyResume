@@ -12,10 +12,8 @@
 .natBut{
   background-color:#b9b9b9;
  color:white;
- padding:25px;
- padding-bottom: 10px;
- padding-top:10px;
- font-size: 150%;
+
+ font-size: 100%;
  border:none;
 }
 
@@ -23,6 +21,7 @@
 position: relative;
 width:700px;
 height:700px;
+left:-80px;
 }
 
 #resumeButtons{
@@ -80,9 +79,10 @@ display:none;
 }
 
 #linkedInIcon{
-    background: radial-gradient(#fdfeff 59.9%,transparent 0%);
-    color: #0077b5;
-    top:10px;
+
+
+  
+    
 }
 
 #linkedInIcon:hover{

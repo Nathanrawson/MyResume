@@ -40,11 +40,11 @@ const ResumeContent = () => {
     return (
         <div style={{ height: "100%" }} id="ResumeContent" >
 
-            <div style={{ height: "100%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundColor: "#00c2cd" }}>
+            <div style={{ height: "100%", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundColor: "#03010c" }}>
                 <div id="landing-header">
                     <div onClick={() => document.getElementById('Profile').scrollIntoView({ behavior: 'smooth' })} >
                         <video className='videoTag' autoPlay muted loop >
-                            <source height src="https://res.cloudinary.com/dng8alzfo/video/upload/v1609079549/Copy_of_Copy_of_Nathan_Rawson.mp4" type='video/mp4' />
+                            <source height src="https://res.cloudinary.com/dng8alzfo/video/upload/v1609082537/Copy_of_Nathan_Logo.mp4" type='video/mp4' />
                         </video>
                     </div>
 
@@ -52,12 +52,11 @@ const ResumeContent = () => {
                         <div id="resumeButtonDiv">
                             <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213206&authkey=AInFSTroIMsKQvE&em=2">Resume (PDF)</a>
                             <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213057&authkey=AEYsc4lfjDvH_jQ&em=2">Resume (Word)</a>
-                        </div>
-                        <div id="LinkedInDivMobile">
-                            <a href="https://www.linkedin.com/in/nathan-rawson-b81726114">
-                                <i id="linkedInIcon" className="fa fa-linkedin-square fa-4x" aria-hidden="true" ></i>
+                            <a className="btn btn-primary" href="https://www.linkedin.com/in/nathan-rawson-b81726114">
+                                <i id="linkedInIcon" className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i>
                                 {""}</a>
                         </div>
+
                     </div>
                 </div>
                 <div className="col-xs" onClick={() => document.getElementById('Profile').scrollIntoView({ behavior: 'smooth' })} id="GoToProfileButton">
@@ -70,14 +69,14 @@ const ResumeContent = () => {
                 <Section color="#B9B9B9" id="Profile">
                     <Profile />
                 </Section>
-                <Section color="#00c2cd" id="Experiences">
+                <Section color="#03010c" id="Experiences">
                     <Experiences />
                 </Section>
                 <Section color="#B9B9B9" id="Abilities">
                     <Abilities />
                 </Section>
 
-                <Section color="#00c2cd" id="Projects">
+                <Section color="#03010c" id="Projects">
                     <Projects />
                 </Section>
                 <Section color="#B9B9B9" id="Contact">
