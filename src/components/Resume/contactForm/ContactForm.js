@@ -19,10 +19,10 @@ function sendEmail() {
     };
 
     const sendEmail = async emailDetails => {
+        document.querySelector(".contact-form").outerHTML = `<div class="contact-form"><div><h2 style="margin-top: 90%; text-align: center;">Thank you for your message!</h2></div></div>`
         await SendGridEmail.get('', {
             params: emailDetails,
         });
-        document.querySelector(".contact-form").outerHTML = `<div class="contact-form"><div><h2 style="margin-top: 90%; text-align: center;">Thank you for your message!</h2></div></div>`
     }
 
     sendEmail(emailDetails);

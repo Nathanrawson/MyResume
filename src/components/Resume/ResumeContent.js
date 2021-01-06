@@ -82,7 +82,6 @@ const ResumeContent = () => {
                 <Section color="#B9B9B9" id="Contact">
                     <ContactForm />
                 </Section>
-
             </div>
         </div>
     )
