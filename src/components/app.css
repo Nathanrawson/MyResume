@@ -9,4 +9,8 @@
 #videoList{
     width:100% !important
 }
+
+}
+#video > div > div.ui.segment > p{
+    color:black;
 }
