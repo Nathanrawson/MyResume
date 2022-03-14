@@ -24,8 +24,13 @@ height:700px;
 left:-80px;
 }
 
+.navbar-dark{
+background-color: #e7c0bb;
+}
+
 #resumeButtons{
-  top:-290px;
+  top:384px;
+
   position: relative;
 }
 

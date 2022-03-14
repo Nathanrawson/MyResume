@@ -68,16 +68,16 @@ const Abilities = () => {
         { ability: "Git Hub", stars: 5 },
     ]
 
-    return <div><SectionHeader h1="Abilities" h3='"Talent you have naturally. Skill is only developed by hours and hours and hours of beating on your craft" - Will Smith' />
+    return <div><SectionHeader h1="Abilities" h3='super snout' />
 
         <div>
-            <h2>Skills</h2>
+            {/* <h2>Skills</h2>
             <AbilityBox Abilities={abilitiesArray1} />
             <AbilityBox Abilities={abilitiesArray2} />
             <hr />
             <h2>Tools</h2>
             <AbilityBox Abilities={abilitiesArray4} />
-            <AbilityBox Abilities={abilitiesArray3} />
+            <AbilityBox Abilities={abilitiesArray3} /> */}
         </div>
     </div>
 }

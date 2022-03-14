@@ -33,15 +33,15 @@ const ContactForm = () => {
         <div> <SectionHeader h1="Contact Me!" h3="Call Me!" /><div className="contact-details"><div className="contact-overlay">
             <div className="contact-details-section">
                 <h3 className="contact-details-text"><i className="fa fa-map-marker" aria-hidden="true"></i> Address</h3>
-                <p>Flat 2, 61A Howardsgate, Welwyn Garden City, Al86BB</p>
+                <p>Farmers market, Welwyn Garden City</p>
             </div>
             <div className="contact-details-section">
                 <h3 className="contact-details-text"><i className="fa fa-phone" aria-hidden="true"></i> Lets Talk</h3>
-                <p>Call me on 07720857279</p>
+                <p>Call on 01707888888</p>
             </div>
             <div className="contact-details-section">
                 <h3 className="contact-details-text"><i className="fa fa-envelope-o" aria-hidden="true"></i> Get Me By Email</h3>
-                <p>nathan@nathanrawson.com</p>
+                <p>porkinton@pigcult.com</p>
             </div>
         </div><div></div></div>
             <div className="contact-form">
@@ -60,14 +60,14 @@ const ContactForm = () => {
                     <div className="contact-box">
                         <h3 className="contact-box-title">Enter Your Email*</h3>
                         <div className="input-group">
-                            <input id="email" placeholder="EG. nathan@nathanrawson.com" className="contact-input form-control" required />
+                            <input id="email" placeholder="" className="contact-input form-control" required />
                         </div>
                     </div>
 
                     <div className="contact-box">
                         <h3 className="contact-box-title">Enter Your Phone Number</h3>
                         <div className="input-group">
-                            <input id="phoneNumber" placeholder="EG. +447720857279" className="contact-input form-control" />
+                            <input id="phoneNumber" placeholder="" className="contact-input form-control" />
                         </div>
                     </div>
 
