@@ -206,7 +206,6 @@ h2 {font-family: 'Montserrat', sans-serif;color: white}
 }
 
 #ResumeContent{
-   
     height:1200px;
 }
 
@@ -220,6 +219,10 @@ h2 {font-family: 'Montserrat', sans-serif;color: white}
   height: 100vh;
 }
 
+#Dark{
+  width:fit-content;
+  z-index: 999999999;
+}
 
 #resumeNavbar span {
   float: left;
@@ -249,6 +252,7 @@ h2 {font-family: 'Montserrat', sans-serif;color: white}
 }
 
 #GoToProfileButton{
+  z-index: 999999999999999;
   position: absolute;
   bottom: 0px;
   left:44px;
@@ -281,19 +285,23 @@ h2 {font-family: 'Montserrat', sans-serif;color: white}
 }
 
 #Profile{
-  height:800px;
+  height:fit-content;
+  padding-bottom: 50px;
 }
 
 #Experiences{
-  height:2000px;
+  height:fit-content;
+  padding-bottom: 50px;
 }
 
 #Abilities{
-  height:1200px;
+  height:fit-content;
+  padding-bottom: 50px;
 }
 
 #Projects{
-  height:3200px;
+  height:fit-content;
+  padding-bottom: 50px;
 }
 
 .centre{
@@ -355,4 +363,8 @@ h2 {font-family: 'Montserrat', sans-serif;color: white}
 .navbar-nav{
   flex-direction:column !important;
   background-color:black;
+}
+
+#Experiences > div > div > div.experience-div > div:nth-child(8) > div{
+  margin-bottom: 30px;
 }

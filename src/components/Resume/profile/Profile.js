@@ -8,11 +8,13 @@ const Profile = () => {
 
         <div id="profileImage"></div>
         <div id="AboutMeDiv">  <h2>About me</h2>
-            <h3>I am a full-stack software developer with over 1 year of commercial dev experience with .Net MVC, Javascript, HTML, CSS and SQL. I also hold a Masters degree in computer science and have years of experience coding on personal and uni projects. I have a passion for everything technology and have used many languages and platforms outside of my work. For example, this website is built using a React framework, a framework I love and enjoy using for front end projects.</h3>
+            <h3>As a proficient full-stack software engineer with over 4 years of commercial experience, I specialize in C#, .Net, SQL, and cloud technologies like AWS and Azure. My secondary skills include front-end technologies such as React, JavaScript, HTML, and CSS, enabling me to excel as a well-rounded full-stack engineer.</h3>
+
+            <h3>Holding a Master's degree in Computer Science, I've honed my abilities through various personal and university projects. My passion for technology has led me to explore Python machine learning libraries and further refine my front-end skills. This diverse expertise positions me as a valuable asset in any full-stack engineering role, excelling in both back-end and front-end development.</h3>
             <h2>Details</h2>
             <h3>Name: Nathan Rawson</h3>
-            <h3>Age: 25</h3>
-            <h3>Location: Welwyn Garden City</h3>
+            <h3>Age: 27</h3>
+            <h3>Location: Austin, TX</h3>
         </div></div>
     )
 }

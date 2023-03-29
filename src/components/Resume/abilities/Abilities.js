@@ -64,7 +64,7 @@ const Abilities = () => {
         { ability: "Azure Cloud Services", stars: 5 },
         { ability: "Google Cloud Platform", stars: 5 },
         { ability: "Azure Boards", stars: 5 },
-        { ability: "Anaconda", stars: 5 },
+        { ability: "AWS", stars: 5 },
         { ability: "Git Hub", stars: 5 },
     ]
 

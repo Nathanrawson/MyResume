@@ -48,8 +48,10 @@
 
     #Dark{
         margin-top:0;
+        width:100%;
         position: fixed;
         z-index: 99;
+        height: fit-content;
     }
 
     .nonSticky {
@@ -107,15 +109,15 @@
       }
 
       #Experiences{
-          height:2000px;
+          height:fit-content;
       }
 
       #Abilities{
-          height:1700px;
+          height:fit-content;
       }
 
       #Projects{
-          height:4200px;
+          height:fit-content;
       }
 
       .contact-details{
@@ -130,16 +132,16 @@
 
     @media only screen and (max-width: 700px) {
         #Experiences{
-            height:2300px;
+            height:fit-content;
         } 
     }
 
     @media only screen and (max-width: 413px) {
         #Experiences{
-            height:2450px;
+            height:fit-content;
         }
         #Profile{
-            height:1500px;
+            height:fit-content;
         }
     }
 
@@ -151,6 +153,6 @@
             width:300px;
         }
         #Profile{
-            height:1500px;
+            height:fit-content;
         }  
     }
