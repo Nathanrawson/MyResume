@@ -33,11 +33,11 @@ const ContactForm = () => {
         <div> <SectionHeader h1="Contact Me!" h3="Call Me!" /><div className="contact-details"><div className="contact-overlay">
             <div className="contact-details-section">
                 <h3 className="contact-details-text"><i className="fa fa-map-marker" aria-hidden="true"></i> Address</h3>
-                <p>Flat 2, 61A Howardsgate, Welwyn Garden City, Al86BB</p>
+                <p>Austin, Texas</p>
             </div>
             <div className="contact-details-section">
                 <h3 className="contact-details-text"><i className="fa fa-phone" aria-hidden="true"></i> Lets Talk</h3>
-                <p>Call me on 07720857279</p>
+                <p>Call me on 5713564419</p>
             </div>
             <div className="contact-details-section">
                 <h3 className="contact-details-text"><i className="fa fa-envelope-o" aria-hidden="true"></i> Get Me By Email</h3>
@@ -67,7 +67,7 @@ const ContactForm = () => {
                     <div className="contact-box">
                         <h3 className="contact-box-title">Enter Your Phone Number</h3>
                         <div className="input-group">
-                            <input id="phoneNumber" placeholder="EG. +447720857279" className="contact-input form-control" />
+                            <input id="phoneNumber" placeholder="EG. 5713564419" className="contact-input form-control" />
                         </div>
                     </div>
 

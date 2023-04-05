@@ -1,22 +1,37 @@
-import React from 'react';
-import './projectsCss.css';
+import React, { useState } from 'react';
+import styles from './projectsCss.module.css';
 
-const project = ({ title, image, content, href }) => {
+const Project = ({ title, images, content, href }) => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const handleNextSlide = () => {
+        setCurrentSlide((currentSlide + 1) % images.length);
+    };
+
+    const handlePrevSlide = () => {
+        setCurrentSlide((currentSlide - 1 + images.length) % images.length);
+    };
+
     return (
-        <div className="project-body"><div className="project"><h1 className="project-title">{title}</h1>
-            <div style={{ backgroundImage: image, backgroundSize: 'cover', borderStyle: 'solid', borderRadius: '25px' }} className="project-box">
-                <div class="overlay">
-                    <div className="text">
-                        <a className="btn btn-primary" href={href}>Click Here!</a>
+        <div className={styles.projectBody}>
+            <div className={styles.project}>
+                <h1 className={styles.projectTitle}>{title}</h1>
+                <div className={styles.projectContainer}>
+                    <div className={styles.sliderContainer}>
+                        <img src={images[currentSlide]} alt={title} className={styles.projectImage} />
+                        <button className={styles.prev} onClick={handlePrevSlide}>&#10094;</button>
+                        <button className={styles.next} onClick={handleNextSlide}>&#10095;</button>
+                        <div className={styles.overlay}>
+                            <a className={`${styles.btn} ${styles.btnPrimary}`} href={href}>Click Here!</a>
+                        </div>
+                    </div>
+                    <div className={styles.projectContent}>
+                        <p className={styles.projectContentText}>{content}</p>
                     </div>
                 </div>
             </div>
-            <div className="project-content">
-                <p className="projct-content-text">{content}</p>
-            </div>
-        </div>
         </div>
     )
 }
 
-export default project; 
+export default Project;

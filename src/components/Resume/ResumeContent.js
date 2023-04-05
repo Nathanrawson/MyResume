@@ -50,8 +50,8 @@ const ResumeContent = () => {
 
                     <div id="resumeButtons">
                         <div id="resumeButtonDiv">
-                            <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213206&authkey=AInFSTroIMsKQvE&em=2">Resume (PDF)</a>
-                            <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213057&authkey=AEYsc4lfjDvH_jQ&em=2">Resume (Word)</a>
+                            <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213404&authkey=AAHKR9vnxHNxbCA&em=2">Resume (PDF)</a>
+                            <a className="natBut btn btn-dark" href="https://onedrive.live.com/download?cid=53E6190C0C16576B&resid=53E6190C0C16576B%213403&authkey=AA0morkX6d_r8B4&em=2">Resume (Word)</a>
                             <a className="btn btn-primary" href="https://www.linkedin.com/in/nathan-rawson-b81726114">
                                 <i id="linkedInIcon" className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i>
                                 {""}</a>

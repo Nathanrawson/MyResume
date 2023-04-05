@@ -9,8 +9,6 @@
         width:400px;
         height:400px;
         bottom:100px;
-        margin-left: 10%;
-    margin-right: 10%;
     }
 
     #resumeButtons{
@@ -50,6 +48,7 @@
         margin-top:0;
         width:100%;
         position: fixed;
+        max-width: 100vw;
         z-index: 99;
         height: fit-content;
     }
