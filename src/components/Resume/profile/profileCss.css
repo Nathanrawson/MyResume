@@ -8,6 +8,10 @@
     background-image:url(https://res.cloudinary.com/dng8alzfo/image/upload/v1607980081/Resume/NathanRawson1234.jpg);
 }
 
+#Projects > div > div > div:nth-child(1) > h3{
+    color:white;
+}
+
 #AboutMeDiv{
     display: inline-block;
     width: 40%;
