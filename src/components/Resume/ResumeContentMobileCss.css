@@ -144,9 +144,9 @@
         }
     }
 
-    @media only screen and (max-width: 330px) {
+    @media only screen and (max-width: 530px) {
         #Experiences{
-            height:2800px;
+            height:fit-content;
         }
         .videoTag{
             width:300px;

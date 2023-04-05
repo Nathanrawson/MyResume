@@ -9,6 +9,10 @@
   width: 1000px;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 .natBut{
   background-color:#b9b9b9;
  color:white;
